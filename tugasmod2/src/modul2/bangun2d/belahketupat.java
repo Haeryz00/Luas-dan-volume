@@ -7,26 +7,25 @@ public class belahketupat extends LKbangun2D {
   private double d1;
   private double d2;
 
+  @Override
   public void infoBangun(double a, double b, double c) {
-    System.out.println("-----------------------------------------------------");
-    System.out.println("Hasil Bangun Belah Ketupat");
-    System.out.println("Sisi: " + a);
+    super.infoBangun(getSisi(), getD1(), getD2());
+    /* System.out.println("Sisi: " + a);
     System.out.println("d1: " + b);
-    System.out.println("d2: " + c);
-
+    System.out.println("d2: " + c); */
   }
 
   @Override
   public void hitungKeliling() {
     keliling = 4 * getSisi();
-    System.out.print("Keliling Belah Ketupat Tersebut Adalah ");
+    setKeliling(keliling);
     super.hitungKeliling();
   }
 
   @Override
   public void hitungLuas() {
     luas = getD1() * getD2() / 2;
-    System.out.print("Luas Belah Ketupat Tersebut Adalah ");
+    setLuas(luas);
     super.hitungLuas();
   }
 

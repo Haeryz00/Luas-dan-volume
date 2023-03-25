@@ -5,23 +5,22 @@ import modul2.LKbangun2D;
 public class lingkaran extends LKbangun2D {
   private double jarijari;
 
+  @Override
   public void infoBangun(double a) {
-    System.out.println("-----------------------------------------------------");
-    System.out.println("Hasil Bangun Segitiga");
-    System.out.println("Jari-jari: " +a);
+    super.infoBangun(a);
   }
 
   @Override
   public void hitungKeliling() {
     keliling = getJarijari() * Math.PI * 2;
-    System.out.print("Keliling Lingkaran Tersebut adalah ");
+    setKeliling(keliling);
     super.hitungKeliling();
   }
 
   @Override
   public void hitungLuas() {
     luas = Math.PI * jarijari * jarijari;
-    System.out.print("Luas Lingkaran Tersebut adalah ");
+    setLuas(luas);
     super.hitungLuas();
   }
 

@@ -7,25 +7,27 @@ public class jajargenjang extends LKbangun2D {
   private double tinggi;
   private double miring;
 
+  @Override
   public void infoBangun(double a, double b , double c) {
-    System.out.println("-----------------------------------------------------");
+    super.infoBangun(getAlas(), getTinggi(), getMiring());
+    /* System.out.println("-----------------------------------------------------");
     System.out.println("Hasil Bangun Persegi");
     System.out.println("Alas: " + a);
     System.out.println("Tinggi: " + b);
-    System.out.println("Miring: " + c);
+    System.out.println("Miring: " + c); */
   }
 
   @Override
   public void hitungKeliling() {
     keliling = 2 * (getAlas() + getTinggi());
-    System.out.print("Keliling Jajargenjang Tersebut adalah ");
+    setKeliling(keliling);
     super.hitungKeliling();
   }
 
   @Override
   public void hitungLuas() {
     luas = getAlas() * getTinggi();
-    System.out.print("Luas Jajargenjang Tersebut adalah ");
+    setLuas(luas);
     super.hitungLuas();
   }
 

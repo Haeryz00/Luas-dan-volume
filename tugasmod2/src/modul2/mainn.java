@@ -5,9 +5,9 @@ import java.util.Scanner;
 import modul2.bangun2d.belahketupat;
 import modul2.bangun2d.jajargenjang;
 import modul2.bangun2d.lingkaran;
-import modul2.bangun2d.persegi;
 import modul2.bangun2d.persegipanjang;
 import modul2.bangun2d.segitiga;
+import modul2.bangun2d.persegi;
 
 public class mainn {
     public static void main(String[] args) {
@@ -64,7 +64,7 @@ public class mainn {
             case 1:
                 belahketupat bk = new belahketupat();
                 System.out.println("Anda memilih Belah Ketupat");
-                System.out.print("Masukka Sisi: ");
+                System.out.print("Masukkan Sisi: ");
                 bk.setSisi(input.nextDouble());
                 System.out.print("Masukkan d1: ");
                 bk.setD1(input.nextDouble());
@@ -90,7 +90,7 @@ public class mainn {
             case 3:
                 lingkaran lk = new lingkaran();
                 System.out.println("Anda memilih lingkaran");
-                System.out.print("Masukkan Jari-jari");
+                System.out.print("Masukkan Jari-jari: ");
                 lk.setJarijari(input.nextDouble());
                 lk.infoBangun(lk.getJarijari());
                 lk.hitungKeliling();

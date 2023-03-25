@@ -6,24 +6,26 @@ public class segitiga extends LKbangun2D {
   private double alas;
   private double tinggi;
   
+  @Override
   public void infoBangun(double a, double b) {
-    System.out.println("-----------------------------------------------------");
+    super.infoBangun(getAlas(), getTinggi());
+    /* System.out.println("-----------------------------------------------------");
     System.out.println("Hasil Bangun Segitiga");
     System.out.println("Alas: " +a);
-    System.out.println("Tinggi: " +b);
+    System.out.println("Tinggi: " +b); */
   }
 
   @Override
   public void hitungKeliling() {
     keliling = getAlas() * 3;
-    System.out.print("Keliling Segitiga Tersebut adalah ");
+    setKeliling(keliling);
     super.hitungKeliling();
   }
 
   @Override
   public void hitungLuas() {
     luas = getAlas() * getTinggi() / 2;
-    System.out.print("Luas Segitiga Tersebut adalah ");
+    setLuas(luas);
     super.hitungLuas();
   }
 
