@@ -21,7 +21,7 @@ public class balok extends LKbangun3D {
         setTinggi(input.nextDouble());
     
         input.close();
-
+      
         super.infoBangun(getPanjang(), getLebar(), getTinggi());
         
     }
