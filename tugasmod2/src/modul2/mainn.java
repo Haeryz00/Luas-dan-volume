@@ -1,11 +1,17 @@
 package modul2;
 import java.util.Scanner;
 
-public class main {
-    public static void main(String[] args) {
-        mainMenu();
+import modul2.bangun3d.balok;
+import modul2.bangun3d.bola;
+import modul2.bangun3d.kerucut;
+import modul2.bangun3d.kubus;
+import modul2.bangun3d.tabung;
 
+public class mainn {
+    public static void main(String[] args) {
         
+
+        mainMenu();
     }    
 
     public static void mainMenu (){
@@ -96,6 +102,12 @@ public class main {
         Scanner input = new Scanner(System.in);
         int pilih3D;
 
+        kubus kubus = new kubus();
+        balok balok = new balok();
+        bola bola = new bola();
+        kerucut kerucut = new kerucut();
+        tabung tabung = new tabung();
+
         System.out.println("Aplikasi penghitung volume bangun3D");
         System.out.println("1. balok");
         System.out.println("2. Bola");
@@ -108,19 +120,25 @@ public class main {
 
         switch (pilih3D) {
             case 1:
-                System.out.println("Anda memilih Balok");
+                balok.infoBangun(pilih3D, pilih3D, pilih3D);
+                balok.hitungVolume();
                 break;
             case 2:
-                System.out.println("Anda memilih bola");
+                
+                bola.infoBangun();
+                bola.hitungVolume();
                 break;
             case 3:
-                System.out.println("Anda memilih kerucut");
+                kerucut.infoBangun();
+                kerucut.hitungVolume();
                 break;
             case 4:
-                System.out.println("Anda memilih Kubus");
+                kubus.infoBangun();
+                kubus.hitungVolume();
                 break;
             case 5:
-                System.out.println("Anda memilih Tabung");
+                tabung.infoBangun();
+                tabung.hitungVolume();
                 break;
             case 6:
                 System.out.println("Kembali");
