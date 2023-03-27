@@ -21,7 +21,7 @@ public class balok extends LKbangun3D {
         setTinggi(input.nextDouble());
     
         
-        System.out.println("Yang memiliki attribute panjang lebar dan tinggi");
+       
         super.infoBangun(getPanjang(), getLebar(), getTinggi());
         
     }
