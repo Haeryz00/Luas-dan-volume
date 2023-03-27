@@ -15,7 +15,8 @@ public class LKbangun3D {
 
     public void infoBangun(double a) {
  
-         System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " Yang memiliki attribute : " + a);
+        System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " Yang memiliki attribute : " + a);
+        
     }
 
     public void infoBangun(double a, double b) {
