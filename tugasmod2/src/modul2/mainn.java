@@ -80,7 +80,7 @@ public class mainn {
         System.out.println("5. Persegi panjang");
         System.out.println("6. Segitiga");
         System.out.println("7. kembali");
-
+        System.out.print("Pilih bangun ruang yang ingin dihitung : " );
         pilih2D = input.nextInt();
 
         switch (pilih2D) {
@@ -189,7 +189,7 @@ public class mainn {
         System.out.println("4. Kubus");
         System.out.println("5. Tabung");
         System.out.println("6. Kembali");
-
+        System.out.print("Pilih bangun ruang yang ingin dihitung : " );
         pilih3D = input.nextInt();
 
         switch (pilih3D) {
