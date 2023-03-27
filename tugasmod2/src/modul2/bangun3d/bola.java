@@ -23,7 +23,7 @@ public class bola extends LKbangun3D {
         setRadius(radius);
     
        
-        System.out.println("yang memiliki attribute radius");
+      
         super.infoBangun(getRadius());
     }
 

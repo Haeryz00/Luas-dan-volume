@@ -32,7 +32,7 @@ public class kerucut extends LKbangun3D{
         System.out.println("Masukan tinggi : ");
         setTinggi(input.nextDouble());
         
-        System.out.println("yang memiliki attribute jari jari dan tinggi");
+       
         super.infoBangun(getJari_jari(), getTinggi());
     }
 

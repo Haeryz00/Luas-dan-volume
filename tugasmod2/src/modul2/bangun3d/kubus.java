@@ -31,7 +31,7 @@ public class kubus extends LKbangun3D{
         double rusuk = input.nextDouble();
         setRusuk(rusuk);
         
-        System.out.println("Yang memiliki rusuk");
+       
         super.infoBangun(getRusuk());
         
     }

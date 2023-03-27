@@ -39,7 +39,7 @@ public class tabung extends LKbangun3D{
         setTinggi(tinggi);
     
         
-        System.out.println("Yang memiliki jari jari dan tinggi");
+      
         super.infoBangun(getJari_jari(), getTinggi());
     }
 
