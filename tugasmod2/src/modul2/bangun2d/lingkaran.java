@@ -24,7 +24,7 @@ public class lingkaran extends LKbangun2D {
     super.hitungLuas();
   }
 
-  public double getJarijari() {
+  private double getJarijari() {
     return this.jarijari;
   }
 

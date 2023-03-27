@@ -9,10 +9,7 @@ public class belahketupat extends LKbangun2D {
 
   @Override
   public void infoBangun(double a, double b, double c) {
-    super.infoBangun(getSisi(), getD1(), getD2());
-    /* System.out.println("Sisi: " + a);
-    System.out.println("d1: " + b);
-    System.out.println("d2: " + c); */
+    super.infoBangun(a, b, c);
   }
 
   @Override
@@ -29,7 +26,7 @@ public class belahketupat extends LKbangun2D {
     super.hitungLuas();
   }
 
-  public double getSisi() {
+  private double getSisi() {
     return this.sisi;
   }
 
@@ -37,7 +34,7 @@ public class belahketupat extends LKbangun2D {
     this.sisi = sisi;
   }
 
-  public double getD1() {
+  private double getD1() {
     return this.d1;
   }
 
@@ -45,7 +42,7 @@ public class belahketupat extends LKbangun2D {
     this.d1 = d1;
   }
 
-  public double getD2() {
+  private double getD2() {
     return this.d2;
   }
 

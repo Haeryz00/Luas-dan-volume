@@ -8,11 +8,7 @@ public class segitiga extends LKbangun2D {
   
   @Override
   public void infoBangun(double a, double b) {
-    super.infoBangun(getAlas(), getTinggi());
-    /* System.out.println("-----------------------------------------------------");
-    System.out.println("Hasil Bangun Segitiga");
-    System.out.println("Alas: " +a);
-    System.out.println("Tinggi: " +b); */
+    super.infoBangun(a, b);
   }
 
   @Override
@@ -29,7 +25,7 @@ public class segitiga extends LKbangun2D {
     super.hitungLuas();
   }
 
-  public double getAlas() {
+  private double getAlas() {
     return this.alas;
   }
 
@@ -37,7 +33,7 @@ public class segitiga extends LKbangun2D {
     this.alas = alas;
   }
 
-  public double getTinggi() {
+  private double getTinggi() {
     return this.tinggi;
   }
 

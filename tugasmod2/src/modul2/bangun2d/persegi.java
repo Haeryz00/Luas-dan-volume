@@ -5,11 +5,9 @@ import modul2.LKbangun2D;
 public class persegi extends LKbangun2D {
   private double sisi;
 
+  @Override
   public void infoBangun(double a) {
     super.infoBangun(getSisi());
-    /* System.out.println("-----------------------------------------------------");
-    System.out.println("Hasil Bangun Persegi"); */
-    /* System.out.println("Sisi: " + a); */
   }
 
   @Override
@@ -26,7 +24,7 @@ public class persegi extends LKbangun2D {
     super.hitungLuas();
   }
 
-  public double getSisi() {
+  private double getSisi() {
     return this.sisi;
   }
 

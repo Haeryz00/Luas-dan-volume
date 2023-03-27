@@ -8,11 +8,7 @@ public class persegipanjang extends LKbangun2D {
 
   @Override
   public void infoBangun(double a, double b) {
-    super.infoBangun(getPanjang(), getLebar());
-    /* System.out.println("-----------------------------------------------------");
-    System.out.println("Hasil Bangun Persegi Panjang");
-    System.out.println("Panjang: " +a);
-    System.out.println("Lebar: " +b); */
+    super.infoBangun(a, b);
   }
 
   @Override
@@ -29,7 +25,7 @@ public class persegipanjang extends LKbangun2D {
     super.hitungLuas();
   }
   
-  public double getPanjang() {
+  private double getPanjang() {
     return this.panjang;
   }
 
@@ -37,12 +33,11 @@ public class persegipanjang extends LKbangun2D {
     this.panjang = panjang;
   }
 
-  public double getLebar() {
+  private double getLebar() {
     return this.lebar;
   }
 
   public void setLebar(double lebar) {
     this.lebar = lebar;
   }
-
 }

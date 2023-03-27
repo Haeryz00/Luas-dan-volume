@@ -8,13 +8,9 @@ public class jajargenjang extends LKbangun2D {
   private double miring;
 
   @Override
-  public void infoBangun(double a, double b , double c) {
-    super.infoBangun(getAlas(), getTinggi(), getMiring());
-    /* System.out.println("-----------------------------------------------------");
-    System.out.println("Hasil Bangun Persegi");
-    System.out.println("Alas: " + a);
-    System.out.println("Tinggi: " + b);
-    System.out.println("Miring: " + c); */
+  public void infoBangun(double a, double b, double c) {
+    super.infoBangun(a, b, c);
+
   }
 
   @Override
@@ -31,7 +27,7 @@ public class jajargenjang extends LKbangun2D {
     super.hitungLuas();
   }
 
-  public double getAlas() {
+  private double getAlas() {
     return this.alas;
   }
 
@@ -39,7 +35,7 @@ public class jajargenjang extends LKbangun2D {
     this.alas = alas;
   }
 
-  public double getTinggi() {
+  private double getTinggi() {
     return this.tinggi;
   }
 

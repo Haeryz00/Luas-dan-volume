@@ -11,7 +11,7 @@ public class LKbangun2D {
   protected double luas;
   protected double keliling;
 
-  public void infoBangun(double a) {
+  protected void infoBangun(double a) {
   System.out.println("-----------------------------------------------------");
     if (this instanceof persegi) {
       System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " yang memiliki sisi: " + a);
@@ -21,7 +21,7 @@ public class LKbangun2D {
     }
   }
 
-  public void infoBangun(double a, double b) {
+  protected void infoBangun(double a, double b) {
     System.out.println("-----------------------------------------------------");
     if (this instanceof persegipanjang) {
       System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " Yang memiliki Panjang: " + a + " dan lebar: " + b);
@@ -31,7 +31,7 @@ public class LKbangun2D {
     }
   }
 
-  public void infoBangun(double a, double b, double c) {
+  protected void infoBangun(double a, double b, double c) {
     System.out.println("-----------------------------------------------------");
     if (this instanceof belahketupat) {
       System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " Yang memiliki sisi: " + a + " --- d1: " + b + " --- d2: " + c);
@@ -41,27 +41,27 @@ public class LKbangun2D {
     }
   }
 
-  public void hitungKeliling() {
+  protected void hitungKeliling() {
     System.out.println("Keliling dari bangun " + this.getClass().getSimpleName() + " tersebut adalah " + getKeliling());
   }
 
-  public void hitungLuas() {
+  protected void hitungLuas() {
     System.out.println("Luas dari bangun " + this.getClass().getSimpleName() + " tersebut adalah " + getLuas());
   }
 
-  public double getLuas() {
+  protected double getLuas() {
     return this.luas;
   }
 
-  public void setLuas(double luas) {
+  protected void setLuas(double luas) {
     this.luas = luas;
   }
 
-  public double getKeliling() {
+  protected double getKeliling() {
     return this.keliling;
   }
 
-  public void setKeliling(double keliling) {
+  protected void setKeliling(double keliling) {
     this.keliling = keliling;
   }
 }
