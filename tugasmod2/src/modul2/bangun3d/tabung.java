@@ -38,7 +38,8 @@ public class tabung extends LKbangun3D{
         double tinggi = input.nextDouble();
         setTinggi(tinggi);
     
-        input.close();
+        
+        System.out.println("Yang memiliki jari jari dan tinggi");
         super.infoBangun(getJari_jari(), getTinggi());
     }
 

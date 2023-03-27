@@ -17,6 +17,10 @@ public class mainn {
     public static void mainMenu (){
         Scanner input = new Scanner(System.in);
         int pilih;
+        boolean hitungulang;
+
+
+        do{
         System.out.println("=====================================");
         System.out.println("Selamat datang di aplikasi LKV");
         System.out.println("Menghhitung luas keliling volume akan menjadi mudah");
@@ -42,6 +46,14 @@ public class mainn {
                 System.out.println("Input tidak valid");
                 break;
         }
+
+        System.out.println("Ingin menghitung bangun lain ? y/n");
+        hitungulang = input.next().equalsIgnoreCase("y");
+
+
+    } while (hitungulang);
+
+
         input.close();
     }
 
@@ -97,58 +109,62 @@ public class mainn {
         input.close();
     }
 
-    public static void bangun3d()
-    {
+    public static void bangun3d() {
         Scanner input = new Scanner(System.in);
         int pilih3D;
-
-        kubus kubus = new kubus();
-        balok balok = new balok();
-        bola bola = new bola();
-        kerucut kerucut = new kerucut();
-        tabung tabung = new tabung();
-
-        System.out.println("Aplikasi penghitung volume bangun3D");
-        System.out.println("1. balok");
-        System.out.println("2. Bola");
-        System.out.println("3. Kerucut");
-        System.out.println("4. kubus");
-        System.out.println("5. Tabung");
-        System.out.println("6. kembali");
-
-        pilih3D = input.nextInt();
-
-        switch (pilih3D) {
-            case 1:
-                balok.infoBangun(pilih3D, pilih3D, pilih3D);
-                balok.hitungVolume();
-                break;
-            case 2:
+        
+        
+            kubus kubus = new kubus();
+            balok balok = new balok();
+            bola bola = new bola();
+            kerucut kerucut = new kerucut();
+            tabung tabung = new tabung();
+    
+            System.out.println("Aplikasi penghitung volume bangun3D");
+            System.out.println("1. balok");
+            System.out.println("2. Bola");
+            System.out.println("3. Kerucut");
+            System.out.println("4. kubus");
+            System.out.println("5. Tabung");
+            System.out.println("6. kembali");
+    
+            pilih3D = input.nextInt();
+    
+            switch (pilih3D) {
+                case 1:
+                    balok.infoBangun(pilih3D, pilih3D, pilih3D);
+                    balok.hitungVolume();
+                    break;
+                case 2:
+                    bola.infoBangun();
+                    bola.hitungVolume();
+                    break;
+                case 3:
+                    kerucut.infoBangun();
+                    kerucut.hitungVolume();
+                    break;
+                case 4:
+                    kubus.infoBangun();
+                    kubus.hitungVolume();
+                    break;
+                case 5:
+                    tabung.infoBangun();
+                    tabung.hitungVolume();
+                    break;
+                case 6:
+                    System.out.println("Kembali");
+                    mainMenu();
+                default:
+                    System.out.println("tidak valid");
+                    break;
                 
-                bola.infoBangun();
-                bola.hitungVolume();
-                break;
-            case 3:
-                kerucut.infoBangun();
-                kerucut.hitungVolume();
-                break;
-            case 4:
-                kubus.infoBangun();
-                kubus.hitungVolume();
-                break;
-            case 5:
-                tabung.infoBangun();
-                tabung.hitungVolume();
-                break;
-            case 6:
-                System.out.println("Kembali");
-                mainMenu();
-                break;
-            default:
-                break;
-        }
-        input.close();
+            }
+    
+           
+       
     }
+    
+    
 }
 
 

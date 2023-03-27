@@ -30,8 +30,8 @@ public class kubus extends LKbangun3D{
         System.out.println("Masukan nilai rusuk : ");
         double rusuk = input.nextDouble();
         setRusuk(rusuk);
-        input.close();
-
+        
+        System.out.println("Yang memiliki rusuk");
         super.infoBangun(getRusuk());
         
     }

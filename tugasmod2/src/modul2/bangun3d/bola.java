@@ -22,8 +22,8 @@ public class bola extends LKbangun3D {
         double radius = input.nextDouble();
         setRadius(radius);
     
-        input.close();
-
+       
+        System.out.println("yang memiliki attribute radius");
         super.infoBangun(getRadius());
     }
 

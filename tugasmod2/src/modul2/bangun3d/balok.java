@@ -20,8 +20,8 @@ public class balok extends LKbangun3D {
         System.out.print("Masukkan tinggi balok: ");
         setTinggi(input.nextDouble());
     
-        input.close();
-      
+        
+        System.out.println("Yang memiliki attribute panjang lebar dan tinggi");
         super.infoBangun(getPanjang(), getLebar(), getTinggi());
         
     }
