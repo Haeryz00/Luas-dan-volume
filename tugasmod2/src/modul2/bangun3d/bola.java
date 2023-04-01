@@ -28,7 +28,7 @@ public class bola extends LKbangun3D {
     }
 
     public void hitungVolume(){
-        double volume = 4.0 / 3.0 * Math.PI * Math.pow(getRadius(), 3);
+        double volume = 4.0 / 3.0 * Math.PI * Math.pow(getRadius(), 3); //math pow pangkat 3
         setVolume(volume);
         super.hitungVolume();
     }

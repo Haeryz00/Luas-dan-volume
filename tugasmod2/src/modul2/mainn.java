@@ -1,6 +1,12 @@
 package modul2;
 import java.util.Scanner;
 
+import modul2.bangun2d.belahketupat;
+import modul2.bangun2d.jajargenjang;
+import modul2.bangun2d.lingkaran;
+import modul2.bangun2d.persegi;
+import modul2.bangun2d.persegipanjang;
+import modul2.bangun2d.segitiga;
 import modul2.bangun3d.balok;
 import modul2.bangun3d.bola;
 import modul2.bangun3d.kerucut;
@@ -12,6 +18,7 @@ public class mainn {
         
 
         mainMenu();
+       
     }    
 
     public static void mainMenu (){
@@ -52,7 +59,7 @@ public class mainn {
 
 
     } while (hitungulang);
-
+        System.exit(0);
 
         input.close();
     }
@@ -62,6 +69,14 @@ public class mainn {
     {
         Scanner input = new Scanner(System.in);
         int pilih2D;
+
+        belahketupat belahketupat = new belahketupat();
+        jajargenjang jajargenjang = new jajargenjang();
+        lingkaran lingkaran = new lingkaran();
+        persegi persegi = new persegi();
+        persegipanjang persegipanjang = new persegipanjang();
+        segitiga segitiga = new segitiga();
+
 
         System.out.println("Aplikasi penghitung luas & keliling bangun datar");
         System.out.println("1. belahketupat");
@@ -76,28 +91,34 @@ public class mainn {
 
         switch (pilih2D) {
             case 1:
-                System.out.println("Anda memilih belahketupat");
-
+                belahketupat.infoBangun(pilih2D, pilih2D, pilih2D);
+                belahketupat.hitungKeliling();
+                belahketupat.hitungLuas();
                 break;
             case 2:
-                System.out.println("Anda memilih Jajargenjang");
-
+                jajargenjang.infoBangun(pilih2D, pilih2D, pilih2D);
+                jajargenjang.hitungKeliling();
+                jajargenjang.hitungLuas();
                 break;
             case 3:
-                System.out.println("Anda memilih lingkaran");
-                
+                lingkaran.infoBangun(pilih2D);
+                lingkaran.hitungKeliling();
+                lingkaran.hitungLuas();
                 break;
             case 4:
-                System.out.println("Anda memilih persegi");
-
+                persegi.infoBangun(pilih2D);
+                persegi.hitungKeliling();
+                persegi.hitungLuas();
                 break;
             case 5:
-                System.out.println("Anda memilih persegi panjang");
-
+                persegipanjang.infoBangun(pilih2D, pilih2D);
+                persegipanjang.hitungKeliling();
+                persegipanjang.hitungLuas();
                 break;                       
             case 6:
-                System.out.println("Anda memilih segitiga");
-
+                segitiga.infoBangun(pilih2D, pilih2D);
+                segitiga.hitungKeliling();
+                segitiga.hitungLuas();
                 break;       
             case 7:
                 System.out.println("Anda memilih kembali");
@@ -106,7 +127,7 @@ public class mainn {
                 System.out.println("Input tidak valid");
                 break;
         }
-        input.close();
+        
     }
 
     public static void bangun3d() {

@@ -22,8 +22,8 @@ public class LKbangun3D {
         // System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " Yang memiliki attribute : " + a);
         System.out.println("-----------------------------------------------------");
         if (this instanceof kubus){
-            System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " yang memiliki rusuk: " + a);
-        }
+            System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " yang memiliki rusuk: " + a); //memeriksa apakah objek saat ini yang sedang dioperasikan termasuk ke dalam kelas kubus 
+        } //this.getClass().getSimpleName() akan mengembalikan nama kelas objek saat ini, yang akan menjadi kubus jika objek tersebut lulus pemeriksaan instanceof.
         else if (this instanceof bola){
             System.out.println("Ini adalah sebuah bangun " + this.getClass().getSimpleName() + " yang memiliki Jari jari: " + a);
         }
